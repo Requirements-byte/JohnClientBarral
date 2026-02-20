@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio | Personal Portfolio</title>
+  <link rel="stylesheet" href="style2.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+
+  <a href="index.html" class="back-btn">← Back to Login</a>
+
+
+  <header class="navbar">
+    <div class="logo">John Client Dael Barral</div>
+    <nav>
+      <a href="#">Making</a>
+      <a href="#">My Dreams</a>
+      <a href="#">Possible</a>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>About Me</h1>
+      <p>
+I am a dedicated and determined student who dreams of becoming a programmer. My journey has not been easy. Balancing my studies with work often means sleepless nights and long hours, but I remain committed to pushing forward. Every challenge I face strengthens my resilience and fuels my passion for technology.
+
+Despite the exhaustion, I continue learning, practicing, and improving my skills because I believe that persistence and hard work will lead me to success. Programming is not just a career path for me—it is a dream I am willing to sacrifice for. I am motivated by the vision of building solutions, creating meaningful projects, and one day achieving the goals I have worked so hard for.
+
+I may face struggles today, but I am determined that my sacrifices will shape a better tomorrow.
+
+    </div>
+    <div class="hero-image">
+      <img src=istockphoto-483724081-612x612.jpg>
+    </div>
+  </section>
+
+
+  <div class="container">
+
+
+    <div class="sidebar">
+      <h3>Sidebar</h3>
+      <a onclick="showPage('home')">Home</a>
+      <a onclick="showPage('contact')">Contact</a>
+      <a onclick="showPage('about')">About</a>
+      <a onclick="showPage('help')">Help</a>
+      <a onclick="exitSystem()">Exit</a>
+    </div>
+
+    <div class="content">
+
+      <div id="home" class="page">
+        <h2>Person Information</h2>
+        <input id="fname" placeholder="First Name">
+        <input id="mname" placeholder="Middle Name">
+        <input id="lname" placeholder="Last Name">
+        <input id="age" type="number" placeholder="Age">
+        <input id="gmail" placeholder="Email">
+        <button id="saveBtn">Save 🔒</button>
+      </div>
+
+
+      <div id="contact" class="page hidden">
+        <h2>Contact</h2>
+        <p>facebook: https://www.facebook.com/john.client.dael.barral.2025</p>
+        <p>email address: paologuintu15@gmail.com</p>
+      </div>
+
+
+      <div id="about" class="page hidden">
+        <h2>About</h2>
+        <p>Improving my programming skills through continuous coding practice is a commitment I embrace every day. By consistently challenging myself with new problems, exploring different languages, and building real-world projects, I deepen my understanding of programming concepts and sharpen my problem-solving abilities. This ongoing dedication not only strengthens my technical expertise but also fuels my creativity and adaptability, empowering me to write cleaner, more efficient code and stay current with evolving technologies. Through persistence and practice, I am steadily transforming from a learner into a confident and proficient developer.
+
+</p>
+      </div>
+
+
+      <div id="help" class="page hidden">
+        <h2>Help</h2>
+        <p>Fill out the required fields in the form with your personal information. Once you click the “Save” button, the system will automatically capture and display the entered details in the table below. This allows you to easily review and organize the submitted data in a structured format.</p>
+      </div>
+    </div>
+
+
+    <div class="table-area">
+      <h2>Persons Data</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>FIRST NAME</th>
+            <th>MIDDLE NAME</th>
+            <th>LAST NAME</th>
+            <th>AGE</th>
+            <th>EMAIL</th>
+          </tr>
+        </thead>
+        <tbody id="tableData"></tbody>
+      </table>
+    </div>
+
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
